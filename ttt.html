@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe Varients</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tokens.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans Deva">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=WDXL Lubrifont TC">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://kit.fontawesome.com/3f8a3ba2ad.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <secion id="home">
+            <div class="container">
+                <h1>Tic Tac Toe</h1>
+                <button id="2-button">Classic Tic Tac Toe</button>
+                <button id="4-button">Large Tic Tac Toe</button>
+            </div>
+        </secion>
+        <section id="player-data" style="display: none;" game="">
+            <h1 id="game-title" style="text-align: center;"></h1>
+            <table id="userNameTable">
+                <tr>
+                    <td><i class="red-token-2"></i></td>
+                    <td><input type="text" id="field1" /></td>
+                    <td><button type="button" class="user-select"><i class="fa-solid fa-user"></i></button><button type="button" class="user-select"><i class="fa-solid fa-robot"></i></button></td>
+                </tr>
+                <tr>
+                    <td><i class="blue-token-2"></i></td>
+                    <td><input type="text" id="field2" /></td>
+                    <td><button type="button" class="user-select"><i class="fa-solid fa-user"></i></button><button type="button" class="user-select"><i class="fa-solid fa-robot"></i></button></td>
+                </tr>
+            </table>
+            <br>
+            <button type="button" id="play-btn" style="position: relative; left: 50%; transform: translate(-50%, -50%);">Play</button>
+        </section>
+        <section id="extra" style="display: none;">
+            <div id="round"></div>
+            <p id="turn-p">Turn: <span id="turn"></span></p>
+            <div class="board" id="board"></div>
+            <div class="disable-bg" id="bg" style="display: none;"></div>
+            <div class="popup" id="message">
+                <p id="stat" style="margin-bottom: 0px;"></p>
+                <button id="proceed"></button>
+                <div class="scoreboard" id="scoreboard" style="position:relative; background-color: transparent;">
+                    <div class="score" id="red" style="color: red;">
+                        <div class="name" id="player1_name"></div>
+                        <div class="points" id="player1_score"></div>
+                    </div>
+                    <div class="score" id="blue" style="color: blue;">
+                        <div class="name" id="player2_name"></div>
+                        <div class="points" id="player2_score"></div>
+                    </div>
+                    <div class="score"  id="yellow" style="color: yellow;">
+                        <div class="name" id="player3_name"></div>
+                        <div class="points" id="player3_score"></div>
+                    </div>
+                    <div class="score"  id="green" style="color: lime;">
+                        <div class="name" id="player4_name"></div>
+                        <div class="points" id="player4_score"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="closing_message" style="display: none;">
+                <p id="closing_stat"></p>
+                <button id="home-btn" style="display:none;">Back to Home</button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+</html>

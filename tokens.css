@@ -1,0 +1,99 @@
+.blue-token {
+    border: solid blue;
+    border-width:5px 5px 5px 5px;
+    display: inline-block;
+    padding: 20px;
+    border-radius:50%;
+}
+
+.green-token {
+    border: solid lime;
+    border-width:5px 5px 5px 5px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.yellow-token {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid yellow;
+    display: inline-block;
+}
+
+.red-token {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.red-token::before,
+.red-token::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 6px;
+    background-color: red;
+    transform-origin: center;
+}
+.red-token::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.red-token::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.blue-token-2 {
+    border: solid blue;
+    border-width:2.5px 2.5px 2.5px 2.5px;
+    display: inline-block;
+    padding: 10px;
+    border-radius:50%;
+}
+
+.green-token-2 {
+    border: solid lime;
+    border-width:2.5px 2.5px 2.5px 2.5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.yellow-token-2 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid yellow;
+    display: inline-block;
+}
+
+.red-token-2 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.red-token-2::before,
+.red-token-2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    transform-origin: center;
+}
+.red-token-2::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.red-token-2::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
