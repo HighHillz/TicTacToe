@@ -4,8 +4,6 @@ A simple, yet a fun game we all must have played! Yes, it is the Tic Tac Toe gam
 But that's not it! There is another varient, which consists of a bigger grid, and more players, which means more challenge! 
 Classic Tic Tac Toe requires 10 mini-wins to win the game, and the large varient requires 7 mini-wins. Play and have fun!
 
-More updates coming soon!
-
 ## Features
 - Tic Tac Toe gameplay (2 Varients)
 - 2 - 4 Player game
